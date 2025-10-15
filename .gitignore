@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+metis_env/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.kiro/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Security - API Keys and Secrets (CRITICAL)
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+credentials.json
+secrets.json
+*secret*
+*credential*
+.api_keys/
+metis_agent/auth/.keys/
+metis_agent/auth/.encrypted_keys/
+
+# Database files with potential sensitive data
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Memory and cache files
+memory/
+*.pkl
+*.pickle
+tool_registry_cache.json
+
+# Metis specific
+agentic_system/memory/storage/*.db
+agentic_system/memory/storage/*.pkl
+agentic_system/identity/profiles/*.json
+memory/agent_registry.json
+memory/agents/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Logs
+logs/
+*.log
+
+# Backup files
+*.backup
+*_backup_*/
+
+# Temporary files
+*.tmp
+*.temp
+nul
