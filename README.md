@@ -70,8 +70,8 @@ cp .env.example .env
 ```python
 from agent import SingleAgent
 
-# Initialize agent
-agent = SingleAgent(user_id="your_user_id", enable_titans_memory=True)
+# Initialize agent (all parameters are optional)
+agent = SingleAgent()
 
 # Process a query
 response = agent.process_query("Write a Python function to calculate Fibonacci numbers")
@@ -235,10 +235,14 @@ agent.configure_adaptive_memory(
 
 ```python
 SingleAgent(
-    user_id="default_user",
-    enable_titans_memory=True
+    user_id="default_user",      # Optional: identifier for memory storage (defaults to "default_user")
+    enable_titans_memory=True    # Optional: enable adaptive memory system (defaults to True)
 )
 ```
+
+**Parameters:**
+- `user_id` (optional): String identifier for separating user data in multi-user applications. Defaults to `"default_user"`. Only needed if you're building a system with multiple users who need separate conversation histories.
+- `enable_titans_memory` (optional): Boolean to enable/disable the adaptive memory system. Defaults to `True`.
 
 **Methods:**
 - `process_query(query, session_id=None)`: Process user query
